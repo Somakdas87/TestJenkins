@@ -11,6 +11,7 @@ public class TestRun {
             int a=1;
             int b=1;
             int c=0;
+            System.out.println("Checking trigger for new changes");
             if (n==1 || n==2){
                 return 1;
             }
