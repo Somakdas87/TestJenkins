@@ -11,7 +11,6 @@ public class TestRun {
             int a=1;
             int b=1;
             int c=0;
-            System.out.println("Checking trigger for new changes");
             if (n==1 || n==2){
                 return 1;
             }
@@ -32,6 +31,8 @@ public class TestRun {
         for (int j=1; j<=10; j++){
             System.out.println(fib.term(j));
         }
+
+        System.out.println("Checking trigger for new changes");
     }
 
 }
