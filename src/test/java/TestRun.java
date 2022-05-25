@@ -1,9 +1,11 @@
+import org.junit.Assert;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 public class TestRun {
-    static void main(String[] args){
-        System.out.println("Main function");
-    }
+//    static void main(String[] args){
+//        System.out.println("Main function");
+//    }
 
     static class fibo{
 
@@ -25,14 +27,20 @@ public class TestRun {
         }
     }
 
+    @BeforeAll
+    public static void beforeAll(){
+        System.out.println("Before All!");
+    }
+
     @Test
-    void printFunc(){
+    public void printFunc(){
         fibo fib=new fibo();
         for (int j=1; j<=10; j++){
             System.out.println(fib.term(j));
         }
 
         System.out.println("Checking trigger for new changes");
+        Assert.assertEquals(1,1);
     }
 
 }
