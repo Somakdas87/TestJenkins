@@ -10,7 +10,7 @@ pipeline {
         stage('Fibonacci') {
             steps {
                 echo 'Fibonacci!'
-                mvn test
+                sh "mvn test"
             }
         }
     }
