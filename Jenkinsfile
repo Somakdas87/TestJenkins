@@ -9,8 +9,7 @@ pipeline {
         }
         stage('Fibonacci') {
             steps {
-                //mvn test
-                mvn verify
+                mvn test
             }
         }
     }
