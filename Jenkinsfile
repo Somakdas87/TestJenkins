@@ -14,7 +14,6 @@ pipeline {
         stage('Fibonacci') {
             steps {
                 echo 'Fibonacci!'
-                //sh "mvn test"
             }
         }
     }
