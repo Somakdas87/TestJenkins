@@ -19,7 +19,7 @@ pipeline {
         stage('Fibonacci') {
             steps {
                 echo 'Fibonacci!'
-                bat "mvn test"
+
             }
         }
     }
